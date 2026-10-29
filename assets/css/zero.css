@@ -253,3 +253,97 @@ a.zg-card:hover {
   font-size: 0.6em;
   vertical-align: 0.3em;
 }
+
+/* Home: button row under the intro */
+.zg-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 1.4rem 0 0.9rem;
+}
+
+.zg-btn {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.zg-btn:hover {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.zg-btn-primary,
+.zg-btn-primary:hover {
+  background: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  color: var(--global-bg-color);
+}
+
+.zg-meta {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+}
+
+/* Two columns side by side (Who we are | news, applications | visits) */
+.zg-two {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.zg-two h2 {
+  margin-top: 0;
+}
+
+.zg-grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.zg-panel {
+  padding: 1.1rem 1.3rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  background: var(--global-card-bg-color);
+}
+
+.zg-panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.zg-panel-head h3 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.zg-panel-head a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.zg-panel .news th {
+  width: 7.5rem !important;
+  font-weight: 500;
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .zg-two,
+  .zg-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
