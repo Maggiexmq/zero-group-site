@@ -22,7 +22,7 @@ groups:
       - name: Emilio Benenati
         url: https://www.linkedin.com/in/emilio-benenati/
         note: KTH & WASP
-        image: Emilio.jpg
+        image: emilio.jpg
         bio: My research lies at the intersection of multi-agent model predictive control and game theory, with a focus on stability guarantees, design principles, and numerical methods for game-theoretic controllers.
       - name: Andrea Martin
         url: https://andrea-martin.github.io/
