@@ -1,3 +1,8 @@
+/* Slightly larger text across the whole site (theme default is 16px) */
+html {
+  font-size: 17.5px;
+}
+
 /* Zero Group: small additions on top of the al-folio theme.
    Colors come from the theme variables, so light and dark mode both work. */
 
@@ -127,8 +132,8 @@ a.zg-card:hover {
 /* one person: photo on the left, name, note and bio on the right */
 .zg-person {
   display: grid;
-  grid-template-columns: 120px 1fr;
-  column-gap: 1.3rem;
+  grid-template-columns: 170px 1fr;
+  column-gap: 1.5rem;
   align-items: start;
   min-width: 0;
 }
@@ -144,15 +149,15 @@ a.zg-card:hover {
 }
 
 .zg-avatar {
-  width: 120px;
-  height: 120px;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
   object-fit: cover;
   display: grid;
   place-items: center;
   background: var(--global-divider-color);
   color: var(--global-theme-color);
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-weight: 700;
   margin-bottom: 0.6rem;
 }
@@ -176,7 +181,7 @@ a.zg-card:hover {
 
 .zg-pi {
   display: grid;
-  grid-template-columns: 120px 1fr;
+  grid-template-columns: 170px 1fr;
   gap: 1.4rem;
   align-items: start;
 }
@@ -189,15 +194,15 @@ a.zg-card:hover {
 
 @media (max-width: 576px) {
   .zg-person {
-    grid-template-columns: 96px 1fr;
+    grid-template-columns: 120px 1fr;
   }
   .zg-avatar {
-    width: 96px;
-    height: 96px;
+    width: 120px;
+    height: 120px;
     font-size: 1.6rem;
   }
   .zg-pi {
-    grid-template-columns: 96px 1fr;
+    grid-template-columns: 120px 1fr;
   }
 }
 
@@ -230,28 +235,16 @@ a.zg-card:hover {
   font-size: 0.95rem;
 }
 
-/* Zero logo: a circled 0 before the group name (navbar on every page, big title on Home) */
+/* Zero logo before the group name (navbar on every page, big title on Home) */
 .navbar-brand.title::before,
 .post-header:has(> .desc) .post-title::before {
-  content: "0";
-  display: inline-grid;
-  place-items: center;
-  width: 1.55em;
-  height: 1.55em;
-  margin-right: 0.4em;
-  border: 0.12em solid var(--global-theme-color);
-  border-radius: 50%;
-  color: var(--global-theme-color);
-  font-family: ui-monospace, Menlo, Consolas, monospace;
-  font-weight: 700;
-  font-size: 0.8em;
-  line-height: 1;
-  vertical-align: 0.15em;
-}
-
-.post-header:has(> .desc) .post-title::before {
-  font-size: 0.6em;
-  vertical-align: 0.3em;
+  content: "";
+  display: inline-block;
+  width: 0.85em;
+  height: 1.05em;
+  margin-right: 0.35em;
+  background: url("../img/zero.png") center / contain no-repeat;
+  vertical-align: -0.15em;
 }
 
 /* Home: button row under the intro */
