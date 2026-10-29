@@ -23,10 +23,12 @@ groups:
         url: https://www.linkedin.com/in/emilio-benenati/
         note: KTH & WASP
         image:
+        bio: My research lies at the intersection of multi-agent model predictive control and game theory, with a focus on stability guarantees, design principles, and numerical methods for game-theoretic controllers.
       - name: Andrea Martin
         url: https://andrea-martin.github.io/
         note: co-advised with Mikael Johansson
         image:
+        bio: My research interests lie at the intersection of control theory, optimization, and machine learning.
       - name: Yue Han
         url: https://www.linkedin.com/in/yue-han-722213307/
         note: with Jelena Zdravkovic & Abbas Dashtimanesh
@@ -34,7 +36,7 @@ groups:
       - name: Liquan Lin
         url: https://www.kth.se/profile/liquan
         note: co-advised with Qianwen Xu
-        image:
+        image: His current research interests lie at the intersection of output regulation theory and feedback optimization, with a focus on data-driven methods and their applications to power systems.
 
   - title: Doctoral students
     members:
