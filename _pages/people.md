@@ -42,6 +42,7 @@ nav_order: 2
           {% if m.url and m.url != '' %}<a href="{{ m.url }}">{{ m.name }}</a>{% else %}{{ m.name }}{% endif %}
         </div>
         {% if m.note and m.note != '' %}<div class="zg-note">{{ m.note }}</div>{% endif %}
+        {% if m.bio and m.bio != '' %}<p class="zg-bio">{{ m.bio }}</p>{% endif %}
       </div>
     {% endfor %}
   </div>
