@@ -28,7 +28,6 @@ Our research focuses on the interplay of automatic control, optimization, and ga
   <a class="zg-btn" href="{{ '/join/#postdoc' | relative_url }}">Postdoc position</a>
   <a class="zg-btn" href="{{ '/master/' | relative_url }}">Master projects</a>
 </div>
-<div class="zg-meta">Led by Giuseppe Belgioioso · Digital Futures · WASP</div>
 
 <div class="zg-two zg-section">
   <div>
@@ -49,7 +48,8 @@ Our research focuses on the interplay of automatic control, optimization, and ga
   <a class="zg-card zg-hot" href="{{ '/join/' | relative_url }}">
     <span class="zg-label">Join us</span>
     <h3>Open positions</h3>
-    <p>One PhD position and one postdoc position are open now.</p>
+    <p><strong>Doctoral student</strong> in Game-Theoretic Methods for Multi-Agent Autonomous Systems · apply by Nov 1, 2026</p>
+    <p><strong>Postdoc</strong> in Computational Methods for Games and Multi-Agent Decision Making · apply by Nov 5, 2026</p>
     <span class="zg-go">See positions →</span>
   </a>
   <a class="zg-card" href="{{ '/research/' | relative_url }}">

@@ -14,16 +14,16 @@ nav_order: 5
   <div class="zg-card" id="phd">
     <h3>PhD</h3>
     <div class="zg-card zg-hot" style="padding: 0.7rem 0.9rem">
-      <strong>PhD student</strong>
-      <span class="zg-facts">Posted Oct 1, 2026</span>
+      <strong>Doctoral student in Game-Theoretic Methods for Multi-Agent Autonomous Systems</strong>
+      <span class="zg-facts">Posted Oct 1, 2026 · Last application date Nov 1, 2026</span>
       <a href="https://www.kth.se/lediga-jobb/970256?l=en">Apply on the KTH portal →</a>
     </div>
   </div>
   <div class="zg-card" id="postdoc">
     <h3>Postdoc</h3>
     <div class="zg-card zg-hot" style="padding: 0.7rem 0.9rem">
-      <strong>Postdoctoral researcher</strong>
-      <span class="zg-facts">Posted Sep 17, 2026</span>
+      <strong>Postdoc in Computational Methods for Games and Multi-Agent Decision Making</strong>
+      <span class="zg-facts">Posted Sep 17, 2026 · Last application date Nov 5, 2026</span>
       <a href="https://www.kth.se/lediga-jobb/970594?l=en">Apply on the KTH portal →</a>
     </div>
   </div>

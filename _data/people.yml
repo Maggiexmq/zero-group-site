@@ -18,6 +18,7 @@ pi:
 
 groups:
   - title: Postdoctoral researchers
+    short: Postdocs # label in the page's section menu
     members:
       - name: Emilio Benenati
         url: https://www.linkedin.com/in/emilio-benenati/
@@ -40,6 +41,7 @@ groups:
         bio: His current research interests lie at the intersection of output regulation theory and feedback optimization, with a focus on data-driven methods and their applications to power systems.
 
   - title: Doctoral students
+    short: PhD students # label in the page's section menu
     members:
       - name: Daniel Tihanyi
         url: https://www.linkedin.com/in/tihanyidani/
@@ -67,6 +69,7 @@ groups:
         image: manqi-xu.jpg
 
   - title: Research assistants
+    short: Research assistants # label in the page's section menu
     members:
       - name: Jinyu Han
         url: https://www.linkedin.com/in/jinyu-han-891656313/
@@ -78,6 +81,7 @@ groups:
         image: theresa-johansson.jpg
 
   - title: Long-term visitors
+    short: Visitors # label in the page's section menu
     members:
       - name: Filippo Fabiani
         url: https://scholar.google.com/citations?user=eXdKzcUAAAAJ
@@ -89,6 +93,7 @@ groups:
         image:
 
   - title: Alumni
+    short: Alumni # label in the page's section menu
     members:
       - name: Sophie Hall
         url: https://shall-research.moneta.studio/

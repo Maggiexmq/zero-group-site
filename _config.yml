@@ -13,7 +13,11 @@ contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Zero Group at KTH Royal Institute of Technology. Automatic control, optimization, and game theory for complex systems.
 footer_text: >
-  Zero Group · Decision and Control Systems, KTH ·
+  Zero Group ·
+  <a href="https://www.kth.se/is/dcs/division-of-decision-and-control-systems-1.788078" target="_blank">Decision and Control Systems, KTH</a> ·
+  <a href="https://www.digitalfutures.kth.se/" target="_blank">Digital Futures</a> ·
+  <a href="https://wasp-sweden.org/" target="_blank">WASP</a>
+  <br>
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: KTH, automatic control, optimization, game theory, power grids # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
