@@ -1,0 +1,93 @@
+# People shown on the People page, in this order.
+#
+# To add a person: copy one "- name:" block into the right group.
+#   name:  full name (required)
+#   url:   personal page, LinkedIn or KTH profile (optional)
+#   note:  co-advisors, affiliation or years (optional)
+#   image: photo file name in assets/img/people/ (optional; initials are shown if empty)
+# To move someone to alumni: cut their block and paste it under "Alumni".
+
+pi:
+  name: Giuseppe Belgioioso
+  url: https://belgioio.github.io/
+  role: Assistant Professor · Digital Futures Faculty · WASP Fellow
+  image:
+  bio: >
+    From 2021 to 2024, he was first a Postdoc and then a Senior Scientist at the Automatic Control Laboratory (ifA), ETH Zurich.
+    He received his PhD in automatic control from Eindhoven University of Technology in 2020, and his Bachelor's and Master's degrees from the University of Padova.
+
+groups:
+  - title: Postdoctoral researchers
+    members:
+      - name: Emilio Benenati
+        url: https://www.linkedin.com/in/emilio-benenati/
+        note: KTH & WASP
+        image:
+      - name: Andrea Martin
+        url: https://andrea-martin.github.io/
+        note: co-advised with Mikael Johansson
+        image:
+      - name: Yue Han
+        url: https://www.linkedin.com/in/yue-han-722213307/
+        note: with Jelena Zdravkovic & Abbas Dashtimanesh
+        image:
+      - name: Liquan Lin
+        url: https://www.kth.se/profile/liquan
+        note: co-advised with Qianwen Xu
+        image:
+
+  - title: Doctoral students
+    members:
+      - name: Daniel Tihanyi
+        url: https://www.linkedin.com/in/tihanyidani/
+        note: co-advised with Dimos Dimarogonas
+        image:
+      - name: Tommaso Zaccherini
+        url: https://www.kth.se/profile/tommasoz
+        note: co-advised with Siyuan Liu & Dimos Dimarogonas
+        image:
+      - name: Jonas Matt
+        url: https://jgmatt.github.io/
+        note: ETH · co-advised with Saverio Bolognani & Florian Dörfler
+        image:
+      - name: Lisa Innocenti Uccini
+        url: https://www.linkedin.com/in/lisa-innocenti-uccini-b44b24225/
+        note: co-advised with Mikael Johansson
+        image:
+      - name: Joas Kahlert
+        url: https://www.kth.se/profile/kahlert
+        note: co-advised with Jonas Mårtensson
+        image:
+      - name: Manqi (Maggie) Xu
+        url: https://www.linkedin.com/in/manqi-maggie-xu-491956281/
+        note: co-advised with Henrik Sandberg
+        image:
+
+  - title: Research assistants
+    members:
+      - name: Jinyu Han
+        url: https://www.linkedin.com/in/jinyu-han-891656313/
+        note: KTH & Digital Futures
+        image:
+      - name: Theresa Johansson
+        url: https://www.linkedin.com/in/theresa-johansson-b616a83a9/
+        note:
+        image:
+
+  - title: Long-term visitors
+    members:
+      - name: Filippo Fabiani
+        url: https://scholar.google.com/citations?user=eXdKzcUAAAAJ
+        note: IMT Lucca · summer 2026
+        image:
+      - name: Gianluca Bianchin
+        url: https://gianlucabi.github.io/
+        note: UCLouvain · summer 2025
+        image:
+
+  - title: Alumni
+    members:
+      - name: Sophie Hall
+        url: https://shall-research.moneta.studio/
+        note: PhD, ETH, June 2026 · with Dominic Liao-McPherson & Florian Dörfler
+        image:

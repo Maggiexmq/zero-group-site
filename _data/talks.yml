@@ -1,0 +1,18 @@
+# Hosted talks shown on the Talks & Meetings page, newest first.
+# To add a talk, copy the example below, remove the "#" signs and fill it in:
+#
+# - date: 2026-11-20
+#   speaker: Speaker Name
+#   affiliation: University
+#   title: Talk title
+#   place: Room or Zoom link (optional)
+#   url: link to slides or recording (optional)
+
+hosted: []
+
+# Workshops organized by the group, newest first.
+workshops:
+  - date: Jul 2026
+    title: Systems Theory of Optimization, Learning, and Control Algorithms
+    venue: Workshop at ECC 2026, Reykjavík, with 48 registered participants
+    url: https://sites.google.com/view/sta-ecc-2026-workshop/home

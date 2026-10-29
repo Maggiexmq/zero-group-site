@@ -1,0 +1,204 @@
+/* Zero Group: small additions on top of the al-folio theme.
+   Colors come from the theme variables, so light and dark mode both work. */
+
+.zg-lead {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.zg-section {
+  margin-top: 2.5rem;
+}
+
+.zg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.zg-grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 768px) {
+  .zg-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.zg-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  background: var(--global-card-bg-color);
+  color: var(--global-text-color);
+  min-width: 0;
+}
+
+a.zg-card:hover {
+  border-color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.zg-card h3,
+.zg-card h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--global-text-color);
+}
+
+.zg-card p {
+  margin: 0;
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+}
+
+.zg-card .zg-go {
+  margin-top: auto;
+  padding-top: 0.4rem;
+  color: var(--global-theme-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.zg-card.zg-hot {
+  border-left: 3px solid var(--global-theme-color);
+}
+
+.zg-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-theme-color);
+}
+
+.zg-status {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--global-theme-color);
+  color: var(--global-theme-color);
+  vertical-align: middle;
+  margin-left: 0.4rem;
+}
+
+.zg-status.zg-tbd {
+  border-style: dashed;
+  border-color: var(--global-text-color-light);
+  color: var(--global-text-color-light);
+}
+
+.zg-facts {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
+
+.zg-tags a {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 0.1rem 0.6rem;
+  margin: 0.2rem 0.3rem 0 0;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 4px;
+}
+
+/* People */
+.zg-group {
+  margin: 2rem 0 0.8rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+}
+
+.zg-people {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.6rem 1rem;
+}
+
+.zg-person {
+  min-width: 0;
+}
+
+.zg-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: grid;
+  place-items: center;
+  background: var(--global-divider-color);
+  color: var(--global-theme-color);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.zg-person .zg-name {
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.zg-person .zg-note {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  line-height: 1.35;
+}
+
+.zg-pi {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1.4rem;
+  align-items: start;
+}
+
+@media (max-width: 576px) {
+  .zg-people {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .zg-avatar {
+    width: 96px;
+    height: 96px;
+    font-size: 1.6rem;
+  }
+  .zg-pi {
+    grid-template-columns: 96px 1fr;
+  }
+}
+
+/* Tables (hosted talks, workshops) */
+.zg-table {
+  width: 100%;
+  font-size: 0.95rem;
+}
+
+.zg-table th {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  font-weight: 500;
+}
+
+.zg-table td,
+.zg-table th {
+  padding: 0.5rem 0.8rem 0.5rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+  vertical-align: top;
+}
+
+.zg-empty {
+  padding: 0.8rem 1rem;
+  border: 1px dashed var(--global-divider-color);
+  border-radius: 6px;
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+}
