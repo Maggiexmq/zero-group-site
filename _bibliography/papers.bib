@@ -36,6 +36,7 @@
   topic    = {theory},
   abstract = {We introduce a principled learning to optimize (L2O) framework for solving fixed-point problems involving general nonexpansive mappings. Our idea is to deliberately inject summable perturbations into a standard Krasnosel'skii--Mann iteration to improve its average-case performance over a specific distribution of problems while retaining its convergence guarantees. Under a metric sub-regularity assumption, we prove that the proposed parametrization includes only iterations that locally achieve linear convergence---up to a vanishing bias term---and that it encompasses all iterations that do so at a sufficiently fast rate. We then demonstrate how our framework can be used to augment several widely-used operator splitting methods to accelerate the solution of structured monotone inclusion problems, and validate our approach on a best approximation problem using an L2O-augmented Douglas--Rachford splitting algorithm.},
   code     = {https://github.com/andrea-martin/l2o-nonexp-fpi},
+  preview  = {martin2026learning.jpg},
   selected = {true}
 }
 
@@ -59,6 +60,7 @@
   code     = {https://github.com/andrea-martin/price-dro},
   topic    = {theory},
   abstract = {Distributionally robust (DR) optimization seeks decisions that perform best under the most adverse law within a given ambiguity set, enabling the design of data-driven controllers with strong out-of-sample guarantees in the face of uncertainty. In this paper, we study the conservatism introduced by safeguarding against distributional ambiguity. Specifically, we consider the data-driven Wasserstein DR linear quadratic control problem, and we analyze the suboptimality of the corresponding solution relative to the oracle controller computed with foreknowledge of the underlying unknown uncertainty distribution. We present a sample complexity bound that characterizes the number of samples required to ensure that the true cost of the DR solution exceeds that of the oracle controller by at most a user-defined tolerance factor. Our analysis reveals that the suboptimality of the DR solution increases at most linearly with the Wasserstein radius for sufficiently small distributional ambiguity, and at most quadratically away from this local regime. Numerical simulations validate our bounds on the price of distributional robustness.},
+  preview  = {martin2026price.jpg},
   selected = {true}
 }
 
@@ -71,6 +73,7 @@
   code     = {https://github.com/andrea-martin/data-driven-davis-yin},
   topic    = {theory},
   abstract = {Operator splitting methods are a fundamental class of algorithms for solving structured monotone inclusion problems arising in optimization, control, and game theory. We consider the case, common in stochastic regimes, where the forward evaluation of one of the constituent operators is either unavailable in closed form or computationally expensive to evaluate, and is therefore approximated using a finite number of noisy oracle samples. We establish distribution-free, finite-sample certificates for the quality of the output produced by data-driven Davis--Yin (DY) splitting algorithms. Unlike previous works, our analysis directly controls the residual error via martingale inequalities instead of relying on algorithmic stability arguments for a tailored surrogate loss, yielding the first a priori certificates whose statistical excess provably vanishes with the sample size. We further show that, under linear convergence of the DY splitting algorithm, the dependence of our bounds on the iteration count improves from linear growth to exponential decay. We validate our theoretical results on a stochastic portfolio optimization problem with uncertain asset returns.},
+  preview  = {martin2026finite.jpg},
   selected = {true}
 }
 
@@ -82,6 +85,7 @@
   arxiv    = {2606.01594},
   topic    = {theory},
   abstract = {This paper considers a class of aggregative congestion games with uncertain coupling constraints, and devises a distributed algorithm to seek the robust generalized Wardrop equilibrium (RGWE) under worst-case uncertainty. Utilizing robust optimization theory, we reformulate the original aggregative congestion game with uncertainty into a tractable and deterministic augmented problem. Building upon this reformulation, we design a fully distributed algorithm to seek the RGWE by integrating a projected primal-dual scheme and a dynamic tracking technique. The convergence of the proposed algorithm is rigorously guaranteed via singular perturbation theory and LaSalle's invariance principle. Furthermore, we explicitly characterize the relationship between the obtained RGWE and the robust generalized Nash equilibrium, as the latter captures full strategic interactions. Finally, numerical simulations on the charging control of plug-in electric vehicles corroborate our theoretical findings.},
+  preview  = {peng2026distributed.jpg},
   selected = {true}
 }
 
@@ -94,6 +98,7 @@
   code     = {https://github.com/darnstrom/dr-daqp-cdc26},
   topic    = {theory},
   abstract = {We present DR-DAQP, an open-source solver for strongly monotone affine variational inequalities that combines Douglas--Rachford operator splitting with an active-set acceleration strategy. The key idea is to estimate the active set along the iterations to attempt a Newton-type correction. This step yields the exact AVI solution when the active set is correctly estimated, thus overcoming the asymptotic convergence limitation inherent in first-order methods. Moreover, we exploit warm-starting and pre-factorization of relevant matrices to further accelerate evaluation of the algorithm iterations. We prove convergence and establish conditions under which the algorithm terminates in finite time with the exact solution. Numerical experiments on randomly generated AVIs show that DR-DAQP is up to two orders of magnitude faster than the state-of-the-art solver PATH. On a game-theoretic MPC benchmark, DR-DAQP achieves solve times several orders of magnitude below those of the mixed-integer solver NashOpt. A high-performing C implementation is available at https://github.com/darnstrom/daqp, with easily-accessible interfaces to Julia, MATLAB, and Python.},
+  preview  = {arnstrom2026drdaqp.jpg},
   selected = {true}
 }
 
@@ -105,6 +110,7 @@
   arxiv    = {2604.12863},
   topic    = {theory},
   abstract = {Online Feedback Optimization leverages properties of optimization algorithms to develop controllers for systems with limited model availability, which is often the case in process control. The interplay between the parameters of the chosen optimization algorithm, as well as lack of direct connection to the characteristics of the underlying process make their tuning challenging. We propose a method for adaptive tuning of Online Feedback Optimization controllers based on scaled projected gradient descent by using sensitivity of the desired objective to the parameters of the algorithm. The proposed adaptive tuning method limits the operator-tunable parameters to scalar values that represent how much the control inputs and the objective can change between iterations without requiring either additional information about the controlled system or repeated experiments. Numerical studies on a gas lift and a continuously-stirred tank reactor processes confirm that our adaptive scheme improves closed-loop performance of Online Feedback optimization compared to standard manual tuning methods.},
+  preview  = {zagorowska2026adaptive.jpg},
   selected = {true}
 }
 
@@ -117,6 +123,7 @@
   doi      = {10.1109/TAC.2025.3616262},
   topic    = {social},
   abstract = {Personalized content on social platforms can exacerbate negative phenomena such as polarization, partly due to the feedback interactions between recommendations and the users. In this paper, we present a control-theoretic recommender system that explicitly accounts for this feedback loop to mitigate polarization. Our approach extends online feedback optimization - a control paradigm for steady-state optimization of dynamical systems - to develop a recommender system that trades off users engagement and polarization reduction, while relying solely on online click data. We establish theoretical guarantees for optimality and stability of the proposed design and validate its effectiveness via numerical experiments with a user population governed by Friedkin-Johnsen dynamics. Our results show these network-aware recommendations can significantly reduce polarization while maintaining high levels of user engagement.},
+  preview  = {chandrasekaran2026network.jpg},
   selected = {true}
 }
 
@@ -130,6 +137,7 @@
   html     = {https://openreview.net/pdf?id=Q4tpr9bnXU},
   topic    = {social},
   abstract = {Although social networks have expanded the range of ideas and information accessible to users, they are also criticized for amplifying the polarization of user opinions. Given the inherent complexity of these phenomena, existing approaches to counteract these effects typically rely on handcrafted algorithms and heuristics. We propose an elegant solution: we act on the network weights that model user interactions on social networks (e.g., frequency of communication), to optimize a performance metric (e.g., polarization reduction), while users' opinions follow the classical Friedkin-Johnsen model. Our formulation gives rise to a challenging large-scale optimization problem with non-convex constraints, for which we develop a gradient-based algorithm. Our scheme is simple, scalable, and versatile, as it can readily integrate different, potentially non-convex, objectives. We demonstrate its merit by: (i) rapidly solving complex social network intervention problems with 3 million variables based on the Reddit and DBLP datasets; (ii) significantly outperforming competing approaches in terms of both computation time and disagreement reduction.},
+  preview  = {kuhne2025optimizing.jpg},
   selected = {true}
 }
 
@@ -169,6 +177,7 @@
   code     = {https://github.com/bemilio/DyNECT},
   abstract = {We present an efficient algorithm to compute the explicit open-loop solution to both finite and infinite-horizon dynamic games subject to state and input constraints. Our approach relies on a multiparametric affine variational inequality characterization of the open-loop Nash equilibria and extends the classical explicit constrained LQR and MPC frameworks to multi-agent non-cooperative settings. A key practical implication is that linear-quadratic game-theoretic MPC becomes viable even at very high sampling rates for multi-agent systems of moderate size. Extensive numerical experiments demonstrate order-of-magnitude improvements in online computation time and solution accuracy compared with state-of-the-art game-theoretic solvers.},
   html     = {https://belgioio.github.io/assets/pdf/main_GTMPC.pdf},
+  preview  = {benenati2025explicit.jpg},
   selected = {true}
 }
 
@@ -211,6 +220,7 @@
   arxiv    = {2404.12165},
   doi      = {10.1109/TAC.2025.3647314},
   topic    = {theory},
+  preview  = {hall2024stability.jpg},
   selected = {true}
 }
 
