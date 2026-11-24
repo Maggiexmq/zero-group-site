@@ -7,13 +7,15 @@
 %   code  = {https://...}     -> "Code" button
 %   html  = {https://...}     -> "HTML" button (publisher page)
 %   doi   = {10.1109/...}     -> "DOI" button
-%   topic = {energy mobility game l2o} -> sections of the Publications page (several allowed, space-separated)
+%   topic = {theory energy mobility} -> section of the Publications page. Entries WITHOUT a topic are not shown
+%   (the older ETH-era papers are kept below without a topic: add one to show them)
+%   preview = {file.jpg} in assets/img/publication_preview/ -> thumbnail
 %   selected = {true}         -> marks a selected paper
 % The current list holds the selected papers from Giuseppe's website and KTH profile.
 % Full list: https://scholar.google.com/citations?user=ck0wft8AAAAJ
 
 @article{innocenti2026learning,
-  topic    = {energy l2o},
+  topic    = {energy},
   title    = {Learning to Clear Peer-to-Peer Energy Markets},
   author   = {Innocenti Uccini, Lisa and Martin, Andrea and Belgioioso, Giuseppe},
   journal  = {Paper submitted to the Learning for Dynamics and Control Conference (L4DC 2027)},
@@ -31,7 +33,7 @@
   journal  = {arXiv preprint arXiv:2601.07665},
   year     = {2026},
   arxiv    = {2601.07665},
-  topic    = {l2o},
+  topic    = {theory},
   abstract = {We introduce a principled learning to optimize (L2O) framework for solving fixed-point problems involving general nonexpansive mappings. Our idea is to deliberately inject summable perturbations into a standard Krasnosel'skii--Mann iteration to improve its average-case performance over a specific distribution of problems while retaining its convergence guarantees. Under a metric sub-regularity assumption, we prove that the proposed parametrization includes only iterations that locally achieve linear convergence---up to a vanishing bias term---and that it encompasses all iterations that do so at a sufficiently fast rate. We then demonstrate how our framework can be used to augment several widely-used operator splitting methods to accelerate the solution of structured monotone inclusion problems, and validate our approach on a best approximation problem using an L2O-augmented Douglas--Rachford splitting algorithm.},
   selected = {true}
 }
@@ -42,7 +44,7 @@
   journal  = {arXiv preprint arXiv:2508.00775},
   year     = {2025},
   arxiv    = {2508.00775},
-  topic    = {l2o},
+  topic    = {theory},
   abstract = {The design of many classical optimization algorithms is driven by the certification of linear convergence rates over classes of optimization problems. In this paper, we consider the problem of improving the average-case performance of an algorithm over a specific distribution of problem instances. While this task can be tackled by embedding trainable components into the algorithm updates, a key challenge is to preserve worst-case guarantees across the entire problem class. For classes of composite optimization problems, we show that all linearly convergent algorithms can be parametrized in terms of a baseline linearly convergent algorithm, and a set of trainable, exponentially-decaying modifications to its update rule; crucially, this parametrization excludes all---and only---the algorithms that do not converge linearly. Our results apply to improving the average-case performance of classical algorithms such as gradient descent for nonconvex, gradient-dominated functions; Nesterov's accelerated method for smooth, strongly convex functions; and projected gradient methods for optimization over polyhedral feasible sets. We illustrate how our characterization can be used for learning to optimize with linear convergence and feasibility guarantees. Numerical results showcase benefits over classical optimizers when solving ill-conditioned systems of linear equations and running a model predictive control scheme on a linear dynamical system.},
   selected = {true}
 }
@@ -61,7 +63,7 @@
 }
 
 @article{benenati2025explicit,
-  topic    = {game},
+  topic    = {theory},
   title    = {The explicit game-theoretic linear quadratic regulator for constrained multi-agent systems},
   author   = {Benenati, Emilio and Belgioioso, Giuseppe},
   journal  = {arXiv preprint arXiv:2512.07749},
@@ -72,7 +74,6 @@
 }
 
 @article{hall2025carbon,
-  topic    = {energy},
   title    = {Carbon-Aware Computing for Data Centers with Probabilistic Performance Guarantees},
   author   = {Hall, Sophie and Micheli, Francesco and Belgioioso, Giuseppe and others},
   journal  = {IEEE Transactions on Power Systems},
@@ -83,7 +84,6 @@
 }
 
 @article{grontas2024big,
-  topic    = {game},
   title    = {BIG Hype: Best intervention in games via distributed hypergradient descent},
   author   = {Grontas, Panagiotis D. and Belgioioso, Giuseppe and Cenedese, Carlo and Fochesato, Marta and Lygeros, John and D{\"o}rfler, Florian},
   journal  = {IEEE Transactions on Automatic Control},
@@ -95,7 +95,6 @@
 }
 
 @article{belgioioso2024online,
-  topic    = {game},
   title    = {Online feedback equilibrium seeking},
   author   = {Belgioioso, Giuseppe and Liao-McPherson, Dominic and de Badyn, Mathias Hudoba and Bolognani, Saverio and Smith, Roy S. and Lygeros, John and D{\"o}rfler, Florian},
   journal  = {IEEE Transactions on Automatic Control},
@@ -105,7 +104,6 @@
 }
 
 @article{hall2024stability,
-  topic    = {game},
   title    = {Stability Certificates for Receding Horizon Games},
   author   = {Hall, Sophie and Liao-McPherson, Dominic and Belgioioso, Giuseppe and D{\"o}rfler, Florian},
   journal  = {IEEE Transactions on Automatic Control (to appear)},
@@ -115,7 +113,6 @@
 }
 
 @article{dorfler2024systems,
-  topic    = {l2o},
   title    = {Towards a systems theory of algorithms},
   author   = {D{\"o}rfler, Florian and He, Zhiyu and Belgioioso, Giuseppe and Bolognani, Saverio and Lygeros, John and Muehlebach, Michael},
   journal  = {IEEE Control Systems Letters},
@@ -125,7 +122,6 @@
 }
 
 @article{belgioioso2022distributed,
-  topic    = {game},
   title    = {Distributed generalized Nash equilibrium seeking: An operator-theoretic perspective},
   author   = {Belgioioso, Giuseppe and Yi, Peng and Grammatico, Sergio and Pavel, Lacra},
   journal  = {IEEE Control Systems Magazine},

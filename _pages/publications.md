@@ -2,35 +2,31 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Selected papers from the group, by topic.
+description: Selected papers from the group.
 nav: true
 nav_order: 1
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/zero.css' | relative_url }}">
 
-<!-- Topics: set the `topic` field of an entry in _bibliography/papers.bib to one or more keys
-     (space-separated): energy, mobility, game, l2o. To add a topic, copy a block below. -->
+<!-- Sections: set the `topic` field of an entry in _bibliography/papers.bib
+     (theory, energy, mobility). Entries without a topic are not listed. -->
 
 <ul class="zg-topics">
-  <li><a href="#energy">Power &amp; energy systems</a></li>
-  <li><a href="#mobility">Mobility</a></li>
-  <li><a href="#game">Game theory &amp; equilibrium seeking</a></li>
-  <li><a href="#l2o">Learning to optimize &amp; algorithms</a></li>
+  <li><a href="#theory">Theory: games, optimization &amp; learning</a></li>
+  <li><a href="#energy">Application: power &amp; energy systems</a></li>
+  <li><a href="#mobility">Application: mobility</a></li>
 </ul>
 
 <div class="publications">
 
-<h2 id="energy">Power &amp; energy systems</h2>
-{% bibliography -q @*[topic~=energy] %}
+<h2 id="theory">Theory: games, optimization &amp; learning</h2>
+{% bibliography -q @*[topic=theory] %}
 
-<h2 id="mobility">Mobility</h2>
-{% bibliography -q @*[topic~=mobility] %}
+<h2 id="energy">Application: power &amp; energy systems</h2>
+{% bibliography -q @*[topic=energy] %}
 
-<h2 id="game">Game theory &amp; equilibrium seeking</h2>
-{% bibliography -q @*[topic~=game] %}
-
-<h2 id="l2o">Learning to optimize &amp; algorithms</h2>
-{% bibliography -q @*[topic~=l2o] %}
+<h2 id="mobility">Application: mobility</h2>
+{% bibliography -q @*[topic=mobility] %}
 
 </div>
