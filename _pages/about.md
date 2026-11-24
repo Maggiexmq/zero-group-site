@@ -18,6 +18,11 @@ latest_posts:
 
 <link rel="stylesheet" href="{{ '/assets/css/zero.css' | relative_url }}">
 
+<div class="zg-section" style="margin-top:0">
+  <h2>Who we are</h2>
+  <p>Zero Group is part of the Division of Decision and Control Systems at KTH Royal Institute of Technology in Stockholm. The group is led by Assistant Professor <a href="https://belgioio.github.io/">Giuseppe Belgioioso</a> and brings together PhD students, postdocs and research assistants working at the meeting point of automatic control, optimization and game theory.</p>
+</div>
+
 <p class="zg-lead">
 Our research focuses on the interplay of automatic control, optimization, and game theory, with applications to complex systems, especially large-scale infrastructures such as electrical power grids and transportation networks. Our goal is to improve their efficiency, reliability, and fairness.
 </p>
@@ -29,19 +34,12 @@ Our research focuses on the interplay of automatic control, optimization, and ga
   <a class="zg-btn" href="{{ '/master/' | relative_url }}">Master projects</a>
 </div>
 
-<div class="zg-two zg-section">
-  <div>
-    <h2>Who we are</h2>
-    <p>Zero Group is part of the Division of Decision and Control Systems at KTH Royal Institute of Technology in Stockholm. The group is led by Assistant Professor <a href="https://belgioio.github.io/">Giuseppe Belgioioso</a> and brings together PhD students, postdocs and research assistants working at the meeting point of automatic control, optimization and game theory.</p>
-    <p>We are a rapidly growing team, with everyone either formally co-advised or integrated through various collaborations.</p>
+<div class="zg-panel zg-section">
+  <div class="zg-panel-head">
+    <h3>Latest news</h3>
+    <a href="{{ '/news/' | relative_url }}">All news →</a>
   </div>
-  <div class="zg-panel">
-    <div class="zg-panel-head">
-      <h3>Latest news</h3>
-      <a href="{{ '/news/' | relative_url }}">All news →</a>
-    </div>
-    {% include news.liquid limit=true %}
-  </div>
+  {% include news.liquid limit=true %}
 </div>
 
 <div class="zg-grid zg-grid-3 zg-section">
