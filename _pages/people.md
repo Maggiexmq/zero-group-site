@@ -4,7 +4,7 @@ title: People
 permalink: /people/
 description: Everyone is either formally co-advised or integrated through various collaborations.
 nav: true
-nav_order: 2
+nav_order: 3
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/zero.css' | relative_url }}">
