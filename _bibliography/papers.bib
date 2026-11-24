@@ -49,6 +49,53 @@
   selected = {true}
 }
 
+@article{martin2026price,
+  title    = {The Price of Distributional Robustness in Linear Quadratic Control},
+  author   = {Martin, Andrea and Belgioioso, Giuseppe},
+  journal  = {arXiv preprint arXiv:2609.17113},
+  year     = {2026},
+  arxiv    = {2609.17113},
+  code     = {https://github.com/andrea-martin/price-dro},
+  topic    = {theory},
+  abstract = {Distributionally robust (DR) optimization seeks decisions that perform best under the most adverse law within a given ambiguity set, enabling the design of data-driven controllers with strong out-of-sample guarantees in the face of uncertainty. In this paper, we study the conservatism introduced by safeguarding against distributional ambiguity. Specifically, we consider the data-driven Wasserstein DR linear quadratic control problem, and we analyze the suboptimality of the corresponding solution relative to the oracle controller computed with foreknowledge of the underlying unknown uncertainty distribution. We present a sample complexity bound that characterizes the number of samples required to ensure that the true cost of the DR solution exceeds that of the oracle controller by at most a user-defined tolerance factor. Our analysis reveals that the suboptimality of the DR solution increases at most linearly with the Wasserstein radius for sufficiently small distributional ambiguity, and at most quadratically away from this local regime. Numerical simulations validate our bounds on the price of distributional robustness.},
+  selected = {true}
+}
+
+@article{martin2026finite,
+  title    = {Finite-sample guarantees for data-driven operator splitting methods via martingale inequalities},
+  author   = {Martin, Andrea and Fabiani, Filippo and Belgioioso, Giuseppe},
+  journal  = {arXiv preprint arXiv:2609.16353},
+  year     = {2026},
+  arxiv    = {2609.16353},
+  code     = {https://github.com/andrea-martin/data-driven-davis-yin},
+  topic    = {theory},
+  abstract = {Operator splitting methods are a fundamental class of algorithms for solving structured monotone inclusion problems arising in optimization, control, and game theory. We consider the case, common in stochastic regimes, where the forward evaluation of one of the constituent operators is either unavailable in closed form or computationally expensive to evaluate, and is therefore approximated using a finite number of noisy oracle samples. We establish distribution-free, finite-sample certificates for the quality of the output produced by data-driven Davis--Yin (DY) splitting algorithms. Unlike previous works, our analysis directly controls the residual error via martingale inequalities instead of relying on algorithmic stability arguments for a tailored surrogate loss, yielding the first a priori certificates whose statistical excess provably vanishes with the sample size. We further show that, under linear convergence of the DY splitting algorithm, the dependence of our bounds on the iteration count improves from linear growth to exponential decay. We validate our theoretical results on a stochastic portfolio optimization problem with uncertain asset returns.},
+  selected = {true}
+}
+
+@article{peng2026distributed,
+  title    = {Distributed Algorithm for Robust Wardrop Equilibrium in Uncertain Aggregative Congestion Games},
+  author   = {Peng, Huan and Chen, Guanpu and Belgioioso, Giuseppe and Johansson, Karl Henrik},
+  journal  = {arXiv preprint arXiv:2606.01594},
+  year     = {2026},
+  arxiv    = {2606.01594},
+  topic    = {theory},
+  abstract = {This paper considers a class of aggregative congestion games with uncertain coupling constraints, and devises a distributed algorithm to seek the robust generalized Wardrop equilibrium (RGWE) under worst-case uncertainty. Utilizing robust optimization theory, we reformulate the original aggregative congestion game with uncertainty into a tractable and deterministic augmented problem. Building upon this reformulation, we design a fully distributed algorithm to seek the RGWE by integrating a projected primal-dual scheme and a dynamic tracking technique. The convergence of the proposed algorithm is rigorously guaranteed via singular perturbation theory and LaSalle's invariance principle. Furthermore, we explicitly characterize the relationship between the obtained RGWE and the robust generalized Nash equilibrium, as the latter captures full strategic interactions. Finally, numerical simulations on the charging control of plug-in electric vehicles corroborate our theoretical findings.},
+  selected = {true}
+}
+
+@article{arnstrom2026drdaqp,
+  title    = {{DR-DAQP}: An Hybrid Operator Splitting and Active-Set Solver for Affine Variational Inequalities},
+  author   = {Arnstr{\"o}m, Daniel and Benenati, Emilio and Belgioioso, Giuseppe},
+  journal  = {arXiv preprint arXiv:2604.02531},
+  year     = {2026},
+  arxiv    = {2604.02531},
+  code     = {https://github.com/darnstrom/daqp},
+  topic    = {theory},
+  abstract = {We present DR-DAQP, an open-source solver for strongly monotone affine variational inequalities that combines Douglas--Rachford operator splitting with an active-set acceleration strategy. The key idea is to estimate the active set along the iterations to attempt a Newton-type correction. This step yields the exact AVI solution when the active set is correctly estimated, thus overcoming the asymptotic convergence limitation inherent in first-order methods. Moreover, we exploit warm-starting and pre-factorization of relevant matrices to further accelerate evaluation of the algorithm iterations. We prove convergence and establish conditions under which the algorithm terminates in finite time with the exact solution. Numerical experiments on randomly generated AVIs show that DR-DAQP is up to two orders of magnitude faster than the state-of-the-art solver PATH. On a game-theoretic MPC benchmark, DR-DAQP achieves solve times several orders of magnitude below those of the mixed-integer solver NashOpt. A high-performing C implementation is available at https://github.com/darnstrom/daqp, with easily-accessible interfaces to Julia, MATLAB, and Python.},
+  selected = {true}
+}
+
 @article{tihanyi2026incentive,
   topic    = {mobility},
   title    = {Incentive-based Fleet Rebalancing in Vehicle-Sharing Systems via Equilibrium-Constrained Optimal Control},
@@ -70,6 +117,7 @@
   year     = {2025},
   arxiv    = {2512.07749},
   code     = {https://github.com/bemilio/DyNECT},
+  abstract = {We present an efficient algorithm to compute the explicit open-loop solution to both finite and infinite-horizon dynamic games subject to state and input constraints. Our approach relies on a multiparametric affine variational inequality characterization of the open-loop Nash equilibria and extends the classical explicit constrained LQR and MPC frameworks to multi-agent non-cooperative settings. A key practical implication is that linear-quadratic game-theoretic MPC becomes viable even at very high sampling rates for multi-agent systems of moderate size. Extensive numerical experiments demonstrate order-of-magnitude improvements in online computation time and solution accuracy compared with state-of-the-art game-theoretic solvers.},
   selected = {true}
 }
 
