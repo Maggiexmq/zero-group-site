@@ -7,7 +7,7 @@
 %   code  = {https://...}     -> "Code" button
 %   html  = {https://...}     -> "HTML" button (publisher page)
 %   doi   = {10.1109/...}     -> "DOI" button
-%   topic = {theory energy mobility} -> section of the Publications page. Entries WITHOUT a topic are not shown
+%   topic = {theory energy mobility social} -> section of the Publications page. Entries WITHOUT a topic are not shown
 %   (the older ETH-era papers are kept below without a topic: add one to show them)
 %   preview = {file.jpg} in assets/img/publication_preview/ -> thumbnail
 %   selected = {true}         -> marks a selected paper
@@ -35,6 +35,7 @@
   arxiv    = {2601.07665},
   topic    = {theory},
   abstract = {We introduce a principled learning to optimize (L2O) framework for solving fixed-point problems involving general nonexpansive mappings. Our idea is to deliberately inject summable perturbations into a standard Krasnosel'skii--Mann iteration to improve its average-case performance over a specific distribution of problems while retaining its convergence guarantees. Under a metric sub-regularity assumption, we prove that the proposed parametrization includes only iterations that locally achieve linear convergence---up to a vanishing bias term---and that it encompasses all iterations that do so at a sufficiently fast rate. We then demonstrate how our framework can be used to augment several widely-used operator splitting methods to accelerate the solution of structured monotone inclusion problems, and validate our approach on a best approximation problem using an L2O-augmented Douglas--Rachford splitting algorithm.},
+  code     = {https://github.com/andrea-martin/l2o-nonexp-fpi},
   selected = {true}
 }
 
@@ -90,9 +91,57 @@
   journal  = {arXiv preprint arXiv:2604.02531},
   year     = {2026},
   arxiv    = {2604.02531},
-  code     = {https://github.com/darnstrom/daqp},
+  code     = {https://github.com/darnstrom/dr-daqp-cdc26},
   topic    = {theory},
   abstract = {We present DR-DAQP, an open-source solver for strongly monotone affine variational inequalities that combines Douglas--Rachford operator splitting with an active-set acceleration strategy. The key idea is to estimate the active set along the iterations to attempt a Newton-type correction. This step yields the exact AVI solution when the active set is correctly estimated, thus overcoming the asymptotic convergence limitation inherent in first-order methods. Moreover, we exploit warm-starting and pre-factorization of relevant matrices to further accelerate evaluation of the algorithm iterations. We prove convergence and establish conditions under which the algorithm terminates in finite time with the exact solution. Numerical experiments on randomly generated AVIs show that DR-DAQP is up to two orders of magnitude faster than the state-of-the-art solver PATH. On a game-theoretic MPC benchmark, DR-DAQP achieves solve times several orders of magnitude below those of the mixed-integer solver NashOpt. A high-performing C implementation is available at https://github.com/darnstrom/daqp, with easily-accessible interfaces to Julia, MATLAB, and Python.},
+  selected = {true}
+}
+
+@article{zagorowska2026adaptive,
+  title    = {Adaptive Tuning of Online Feedback Optimization for Process Control Applications},
+  author   = {Zagorowska, Marta and Ortmann, Lukas and Belgioioso, Giuseppe and Imsland, Lars},
+  journal  = {arXiv preprint arXiv:2604.12863},
+  year     = {2026},
+  arxiv    = {2604.12863},
+  topic    = {theory},
+  abstract = {Online Feedback Optimization leverages properties of optimization algorithms to develop controllers for systems with limited model availability, which is often the case in process control. The interplay between the parameters of the chosen optimization algorithm, as well as lack of direct connection to the characteristics of the underlying process make their tuning challenging. We propose a method for adaptive tuning of Online Feedback Optimization controllers based on scaled projected gradient descent by using sensitivity of the desired objective to the parameters of the algorithm. The proposed adaptive tuning method limits the operator-tunable parameters to scalar values that represent how much the control inputs and the objective can change between iterations without requiring either additional information about the controlled system or repeated experiments. Numerical studies on a gas lift and a continuously-stirred tank reactor processes confirm that our adaptive scheme improves closed-loop performance of Online Feedback optimization compared to standard manual tuning methods.},
+  selected = {true}
+}
+
+@article{chandrasekaran2026network,
+  title    = {Network-Aware Recommender System via Online Feedback Optimization},
+  author   = {Chandrasekaran, Sanjay and De Pasquale, Giulia and Belgioioso, Giuseppe and D{\"o}rfler, Florian},
+  journal  = {IEEE Transactions on Automatic Control},
+  year     = {2026},
+  arxiv    = {2408.16899},
+  doi      = {10.1109/TAC.2025.3616262},
+  topic    = {social},
+  abstract = {Personalized content on social platforms can exacerbate negative phenomena such as polarization, partly due to the feedback interactions between recommendations and the users. In this paper, we present a control-theoretic recommender system that explicitly accounts for this feedback loop to mitigate polarization. Our approach extends online feedback optimization - a control paradigm for steady-state optimization of dynamical systems - to develop a recommender system that trades off users engagement and polarization reduction, while relying solely on online click data. We establish theoretical guarantees for optimality and stability of the proposed design and validate its effectiveness via numerical experiments with a user population governed by Friedkin-Johnsen dynamics. Our results show these network-aware recommendations can significantly reduce polarization while maintaining high levels of user engagement.},
+  selected = {true}
+}
+
+@article{kuhne2025optimizing,
+  title    = {Optimizing Social Network Interventions via Hypergradient-Based Recommender System Design},
+  author   = {K{\"u}hne, Marino and Grontas, Panagiotis D. and De Pasquale, Giulia and Belgioioso, Giuseppe and D{\"o}rfler, Florian and Lygeros, John},
+  journal  = {Forty-second International Conference on Machine Learning (ICML)},
+  year     = {2025},
+  arxiv    = {2502.12973},
+  code     = {https://github.com/m-kuehne/BeeRS},
+  html     = {https://openreview.net/pdf?id=Q4tpr9bnXU},
+  topic    = {social},
+  abstract = {Although social networks have expanded the range of ideas and information accessible to users, they are also criticized for amplifying the polarization of user opinions. Given the inherent complexity of these phenomena, existing approaches to counteract these effects typically rely on handcrafted algorithms and heuristics. We propose an elegant solution: we act on the network weights that model user interactions on social networks (e.g., frequency of communication), to optimize a performance metric (e.g., polarization reduction), while users' opinions follow the classical Friedkin-Johnsen model. Our formulation gives rise to a challenging large-scale optimization problem with non-convex constraints, for which we develop a gradient-based algorithm. Our scheme is simple, scalable, and versatile, as it can readily integrate different, potentially non-convex, objectives. We demonstrate its merit by: (i) rapidly solving complex social network intervention problems with 3 million variables based on the Reddit and DBLP datasets; (ii) significantly outperforming competing approaches in terms of both computation time and disagreement reduction.},
+  selected = {true}
+}
+
+@article{jiang2025voltage,
+  title    = {Voltage Support Procurement in Transmission Grids: Incentive Design via Online Bilevel Games},
+  author   = {Jiang, Zhisen and Bolognani, Saverio and Belgioioso, Giuseppe},
+  journal  = {2025 IEEE 64th Conference on Decision and Control (CDC)},
+  year     = {2025},
+  arxiv    = {2508.05378},
+  doi      = {10.1109/CDC57313.2025.11312860},
+  topic    = {energy},
+  abstract = {The integration of distributed energy resources into transmission grid operations presents a complex challenge, particularly in the context of reactive power procurement for voltage support. This paper addresses this challenge by formulating the voltage regulation problem as a Stackelberg game, where the Transmission System Operator (TSO) designs incentives to guide the reactive power responses of Distribution System Operators (DSOs). We utilize a gradient-based iterative algorithm that updates the incentives to ensure that DSOs adjust their reactive power injections to maintain voltage stability. We incorporate principles from online feedback optimization to enable real-time implementation, utilizing voltage measurements in both TSO's and DSOs' policies. This approach not only enhances the robustness against model uncertainties and changing operating conditions but also facilitates the codesign of incentives and automation. Numerical experiments on a 5-bus transmission grid demonstrate the effectiveness of our approach in achieving voltage regulation while accommodating the strategic interactions of self-interested DSOs.},
   selected = {true}
 }
 
@@ -106,6 +155,7 @@
   code     = {https://github.com/tihanyidani/vehicle-sharing},
   preview  = {tihanyi2026vehicle.jpg},
   abstract = {We propose an incentive-based fleet rebalancing scheme for vehicle-sharing systems that uses fare discounts to steer users toward alternative pick-up locations. The discounts solve an optimal control problem that trades off users leaving the service against incentive costs over a day of operation. Users' responses to incentives are modeled as a Nash equilibrium of logit models coupled through shared vehicle-availability constraints, which makes the control problem a mathematical program with nested equilibrium constraints. We develop a first-order algorithm that backpropagates through the equilibria via nonsmooth implicit differentiation and enjoys convergence guarantees. In a case study that uses Helsinki bike-sharing data, our scheme reduces the number of leaving users by up to 99\% relative to no incentives, and outperforms heuristic policies while using up to 52\% less incentive.},
+  html     = {https://github.com/tihanyidani/vehicle-sharing/blob/main/paper/Tihanyi_Belgioioso_2026_extended.pdf},
   selected = {true}
 }
 
@@ -118,16 +168,18 @@
   arxiv    = {2512.07749},
   code     = {https://github.com/bemilio/DyNECT},
   abstract = {We present an efficient algorithm to compute the explicit open-loop solution to both finite and infinite-horizon dynamic games subject to state and input constraints. Our approach relies on a multiparametric affine variational inequality characterization of the open-loop Nash equilibria and extends the classical explicit constrained LQR and MPC frameworks to multi-agent non-cooperative settings. A key practical implication is that linear-quadratic game-theoretic MPC becomes viable even at very high sampling rates for multi-agent systems of moderate size. Extensive numerical experiments demonstrate order-of-magnitude improvements in online computation time and solution accuracy compared with state-of-the-art game-theoretic solvers.},
+  html     = {https://belgioio.github.io/assets/pdf/main_GTMPC.pdf},
   selected = {true}
 }
 
 @article{hall2025carbon,
   title    = {Carbon-Aware Computing for Data Centers with Probabilistic Performance Guarantees},
-  author   = {Hall, Sophie and Micheli, Francesco and Belgioioso, Giuseppe and others},
+  author   = {Hall, Sophie and Micheli, Francesco and Belgioioso, Giuseppe and Radovanovi{\'c}, Ana and D{\"o}rfler, Florian},
   journal  = {IEEE Transactions on Power Systems},
   year     = {2025},
   arxiv    = {2410.21510},
-  html     = {https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11250739},
+  doi      = {10.1109/TPWRS.2025.3630499},
+  topic    = {energy},
   selected = {true}
 }
 
@@ -153,10 +205,12 @@
 
 @article{hall2024stability,
   title    = {Stability Certificates for Receding Horizon Games},
-  author   = {Hall, Sophie and Liao-McPherson, Dominic and Belgioioso, Giuseppe and D{\"o}rfler, Florian},
-  journal  = {IEEE Transactions on Automatic Control (to appear)},
-  year     = {2024},
+  author   = {Hall, Sophie and Belgioioso, Giuseppe and D{\"o}rfler, Florian and Liao-McPherson, Dominic},
+  journal  = {IEEE Transactions on Automatic Control},
+  year     = {2026},
   arxiv    = {2404.12165},
+  doi      = {10.1109/TAC.2025.3647314},
+  topic    = {theory},
   selected = {true}
 }
 
