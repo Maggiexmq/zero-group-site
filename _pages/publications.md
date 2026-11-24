@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: Selected papers. For the full list, see <a href="https://scholar.google.com/citations?user=ck0wft8AAAAJ">Google Scholar</a>.
+description: Selected papers from the group.
 nav: true
 nav_order: 3
 ---
